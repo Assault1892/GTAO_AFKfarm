@@ -38,6 +38,7 @@ Send {w}              ; 対戦
 Send {w}              ; ミッション
 Send {w}              ; サバイバル
 Send {enter}          ; 選択
+Sleep, DELAY_MENU     ; 念のため    
 Send {enter}          ; ジョブを選択
 Send {enter}          ; 開始
 
@@ -64,7 +65,7 @@ while( True )
 				Send {enter}      ; 選択
 				
 				job_status++      ; ジョブ状態を進行
-				Sleep, ( DELAY_MENU * 3.2 )
+				Sleep, ( DELAY_MENU * 3.5 )
 			}
 			case 1: ; 招待画面
 			{
@@ -77,7 +78,7 @@ while( True )
 				Send {enter} ; 開始
 				
 				job_status++ ; ジョブ状態を進行
-				Sleep, ( DELAY_MENU * 3 )
+				Sleep, ( DELAY_MENU * 4 )
 			}
 			case 2: ; ジョブ終了，自動リプレイ
 			{
@@ -86,7 +87,7 @@ while( True )
 				Send {enter}  ; 選択
 				
 				global job_status := 0 ; リセット
-				Sleep, ( DELAY_MENU * 4.5 )
+				Sleep, ( DELAY_MENU * 5 )
 				Continue
 			}
 		}

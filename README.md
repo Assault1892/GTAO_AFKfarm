@@ -17,5 +17,11 @@ GTA の設定を以下のように調整
 - ウィンドウモード
 - 解像度 800x600
 
-招待セッションとかに入ったら **何もせず** `ahk_farm.ahk` を起動  
+招待セッションとかに入ったら **何もせず** `ahk_farm_short.ahk` を起動  
 後は放置
+
+# What is "Long" ?
+
+適当な長い放置ジョブをブックマークして一番下に配置されるようにする  
+おすすめは [これ](https://socialclub.rockstargames.com/job/gtav/BwmjV9txpEOCz4oVJAna3w)  
+ブックマークしたら `ahk_farm_long.ahk` を起動
