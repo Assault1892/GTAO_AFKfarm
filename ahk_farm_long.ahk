@@ -66,17 +66,14 @@ while( True )
 				Send {enter}      ; 選択
 				
 				job_status++      ; ジョブ状態を進行
-				Sleep, ( DELAY_MENU * 5 )
+				Sleep, ( DELAY_MENU * 6 )
 			}
 			case 1: ; 招待画面
 			{
-				Send {d}     ; マッチメイキングを非公開に
 				Send {w}     ; プレイ
-				Send {w}     ; ホスト以外による招待
-				Send {d}     ; オフ
-				Send {s}     ; プレイ
 				Send {enter} ; 選択
 				Send {enter} ; 開始
+        Send {enter} ; 念のため
 				
 				job_status++ ; ジョブ状態を進行
 				Sleep, ( DELAY_MENU * 5 )
