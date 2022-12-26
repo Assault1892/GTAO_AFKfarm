@@ -3,8 +3,8 @@ SetWorkingDir %A_ScriptDir%  ; ワーキングディレクトリを明示的に�
 
 ; ========= 変数 ==========
 
-KEY_SEND_DELAY = 170 ; メニュー間の移動が早い場合はこの値を上げる
-KEY_PRESS_DELAY = 90 ; キーが押されない場合はこの値を上げる
+KEY_SEND_DELAY = 200 ; メニュー間の移動が早い場合はこの値を上げる
+KEY_PRESS_DELAY = 100 ; キーが押されない場合はこの値を上げる
 DELAY_MENU = 1200
 
 ; ==============================
@@ -83,7 +83,8 @@ while( True )
 				Sleep, 1000
 				Send {w}      ; リプレイ
 				Send {enter}  ; 選択
-				
+				Send {enter}  ; 念のため
+
         Sleep, ( DELAY_MENU * 6 )
 				global job_status := 0 ; リセット
 				Continue
