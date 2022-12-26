@@ -31,7 +31,7 @@ Send {s}              ; ジョブをプレイ
 Send {enter}          ; 選択
 Send {s}              ; ブックマーク済み
 Send {enter}          ; 選択
-Sleep, DELAY_MENU * 2 ; 読み込み待機
+Sleep, DELAY_MENU * 6 ; 読み込み待機
 Send {w}              ; パラシューティング
 Send {w}              ; 敵対モード
 Send {w}              ; 対戦
@@ -42,7 +42,7 @@ Sleep, DELAY_MENU     ; 念のため
 Send {enter}          ; ジョブを選択
 Send {enter}          ; 開始
 
-Sleep, DELAY_MENU * 2
+Sleep, DELAY_MENU * 6
 
 job_status := 0       ; ジョブの状態をリセット
 
@@ -65,20 +65,16 @@ while( True )
 				Send {enter}      ; 選択
 				
 				job_status++      ; ジョブ状態を進行
-				Sleep, ( DELAY_MENU * 3.5 )
+				Sleep, ( DELAY_MENU * 5 )
 			}
 			case 1: ; 招待画面
 			{
-				Send {d}     ; マッチメイキングを非公開に
 				Send {w}     ; プレイ
-				Send {w}     ; ホスト以外による招待
-				Send {d}     ; オフ
-				Send {s}     ; プレイ
 				Send {enter} ; 選択
 				Send {enter} ; 開始
 				
 				job_status++ ; ジョブ状態を進行
-				Sleep, ( DELAY_MENU * 4 )
+				Sleep, ( DELAY_MENU * 5 )
 			}
 			case 2: ; ジョブ終了，自動リプレイ
 			{
@@ -87,7 +83,7 @@ while( True )
 				Send {enter}  ; 選択
 				
 				global job_status := 0 ; リセット
-				Sleep, ( DELAY_MENU * 5 )
+				Sleep, ( DELAY_MENU * 6 )
 				Continue
 			}
 		}
