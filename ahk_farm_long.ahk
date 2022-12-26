@@ -5,7 +5,7 @@ SetWorkingDir %A_ScriptDir%  ; ワーキングディレクトリを明示的に�
 
 KEY_SEND_DELAY = 200 ; メニュー間の移動が早い場合はこの値を上げる
 KEY_PRESS_DELAY = 100 ; キーが押されない場合はこの値を上げる
-DELAY_MENU = 1200
+DELAY_MENU = 1000
 
 ; ==============================
 
