@@ -41,6 +41,7 @@ Send {enter}          ; 選択
 Sleep, DELAY_MENU     ; 念のため    
 Send {enter}          ; ジョブを選択
 Send {enter}          ; 開始
+Send {enter}          ; 念のため
 
 Sleep, DELAY_MENU * 6
 
@@ -64,8 +65,8 @@ while( True )
 				Send {w}          ; 設定完了
 				Send {enter}      ; 選択
 				
-				job_status++      ; ジョブ状態を進行
 				Sleep, ( DELAY_MENU * 6 )
+				job_status++      ; ジョブ状態を進行
 			}
 			case 1: ; 招待画面
 			{
@@ -74,8 +75,8 @@ while( True )
 				Send {enter} ; 開始
         Send {enter} ; 念のため
 				
+        Sleep, ( DELAY_MENU * 5 )
 				job_status++ ; ジョブ状態を進行
-				Sleep, ( DELAY_MENU * 5 )
 			}
 			case 2: ; ジョブ終了，自動リプレイ
 			{
@@ -83,8 +84,8 @@ while( True )
 				Send {w}      ; リプレイ
 				Send {enter}  ; 選択
 				
+        Sleep, ( DELAY_MENU * 6 )
 				global job_status := 0 ; リセット
-				Sleep, ( DELAY_MENU * 6 )
 				Continue
 			}
 		}
