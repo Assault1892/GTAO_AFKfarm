@@ -81,7 +81,7 @@ while( True )
 			}
 			case 2: ; ジョブ終了，自動リプレイ
 			{
-				Sleep, 1000
+				Sleep, 2000
 				Send {w}      ; リプレイ
 				Send {enter}  ; 選択
 				Send {enter}  ; 念のため
