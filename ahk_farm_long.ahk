@@ -62,7 +62,7 @@ while( True )
 		{
 			case 0: ; 設定画面
 			{
-				Sleep, DELAY_MENU
+				Sleep, ( DELAY_MENU * 5 )
 				Send {w}          ; 設定完了
 				Send {enter}      ; 選択
 				
