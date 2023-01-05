@@ -62,7 +62,7 @@ while( True )
 		{
 			case 0: ; 設定画面
 			{
-				Sleep, ( DELAY_MENU * 5 )
+				Sleep, ( DELAY_MENU * 10 )
 				Send {w}          ; 設定完了
 				Send {enter}      ; 選択
 				
@@ -81,7 +81,7 @@ while( True )
 			}
 			case 2: ; ジョブ終了，自動リプレイ
 			{
-				Sleep, 2000
+				Sleep, 5000
 				Send {w}      ; リプレイ
 				Send {enter}  ; 選択
 				Send {enter}  ; 念のため
