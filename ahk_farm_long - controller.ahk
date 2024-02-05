@@ -1,3 +1,5 @@
+; まだうごかない。試作。
+
 SetWorkingDir %A_ScriptDir%  ; ワーキングディレクトリを明示的に指定
 #SingleInstance Ignore
 
@@ -78,7 +80,7 @@ while( True )
 				Send {enter} ; 開始
         Send {enter} ; 念のため
 				
-        Sleep, ( DELAY_MENU * 5 )
+        Sleep, ( DELAY_MENU * 10 )
 				job_status++ ; ジョブ状態を進行
 			}
 			case 2: ; ジョブ終了，自動リプレイ
@@ -100,7 +102,7 @@ while( True )
 		{
       WinActivate, ahk_exe GTA5.exe ; 他のアプリによるフォーカス外しを対策するためにウィンドウをアクティブ化
       Sleep, 2000
-			Send {z 3}
+			Send {JoyPOV18000 3}
 			Sleep, 2000
 		}
 	}
